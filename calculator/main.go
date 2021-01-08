@@ -63,5 +63,5 @@ func main() {
 	// implementation but is in fact over an RPC connection.
 	calcs := raw.(calcs.Calcs)
 	test := calcs.Operation(argu)
-	fmt.Printf("%v\n", test)
+	fmt.Printf("Output value is %f\n", test)
 }

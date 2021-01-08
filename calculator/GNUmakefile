@@ -5,7 +5,7 @@ default: help
 bin: $(SOURCE_FILES) ## Build binaries
 	go build -o $(CURDIR)/bin/calculator .
 	go build -o $(CURDIR)/bin/calculator-sum ./operations/sum
-	
+	go build -o $(CURDIR)/bin/calculator-multiply ./operations/multiply
 
 .PHONY: clean
 clean: ## Clean source tree
