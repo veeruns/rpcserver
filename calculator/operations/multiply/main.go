@@ -13,7 +13,7 @@ func main() {
 		HandshakeConfig: plugin.HandshakeConfig{
 			ProtocolVersion:  1,
 			MagicCookieKey:   "CALCULATOR_SIMPLE",
-			MagicCookieValue: "PI",
+			MagicCookieValue: "28ad59a0-f6e2-446f-b64b-c48de4ab721e",
 		},
 		Plugins: map[string]plugin.Plugin{
 			"calculator": calcs.CalcsPlugin{

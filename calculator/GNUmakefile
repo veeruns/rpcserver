@@ -4,12 +4,13 @@ default: help
 
 bin: $(SOURCE_FILES) ## Build binaries
 	go build -o $(CURDIR)/bin/calculator .
-	go build -o $(CURDIR)/bin/calculator-sum ./operations/sum
-	go build -o $(CURDIR)/bin/calculator-multiply ./operations/multiply
+	go build -o $(CURDIR)/.config/plugins/sum ./operations/sum
+	go build -o $(CURDIR)/.config/plugins/multiply ./operations/multiply
 
 .PHONY: clean
 clean: ## Clean source tree
 	rm -r $(CURDIR)/bin
+	rm -r $(CURDIR)/.config/
 
 .PHONY: help
 help: ## Display target information
